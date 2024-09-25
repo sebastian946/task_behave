@@ -25,6 +25,7 @@ class TestPage:
             self.context.actions.sendKeys(self.web_elements.input_date, fecha_str)
 
             # Busca el emoji y cuenta
+            #pull
             emoji_title = self.context.actions.getContextText(self.web_elements.text_emoji)
             emoji_to_count = self.context.tools.searchEmoji(emoji_title)
             emoji_text = self.context.actions.getContextText(self.web_elements.text_content_emoji)
